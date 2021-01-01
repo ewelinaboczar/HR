@@ -70,7 +70,7 @@ void hrms::read_from_file_salary()
 /* Dodawanie nowego pracownika na koniec pliku */
 void hrms::add_new_worker(employee worker) 
 {
-    workers.push_back(worker);
+    //workers.push_back(worker);
     fstream plik3;
     fstream plik5;
     plik3.open("Workers.txt", std::ios::app);
@@ -92,6 +92,7 @@ void hrms::add_new_worker(employee worker)
     }
     else throw WrongOpenFile();
     plik5.close();
+    plik3.close();
 }
 
 /* Drukowanie pracowników z konteneru (workers)*/

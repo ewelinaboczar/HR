@@ -99,8 +99,8 @@ int main()
                 cout << "Podaj pensje" << endl;
                 cin >> new_salary;
                 employee add_worker(id, name, surname, depart, position);
-                nowy.add_new_worker(add_worker);
                 nowy.add(add_worker, depart, new_salary);
+                nowy.add_new_worker(add_worker);
                 break;
             }
             default:
